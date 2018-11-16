@@ -2,23 +2,24 @@
 body {
 }
 
+
 footer {
-    margin-top: 400px;
+    margin-top: 300px;
+    padding: auto;
+    float: bottom;
     height: 50px;
     text-align: center;
     color: #7A7A7F;
 }
 
-div.title {
-    text-align: left;
-    margin-bottom: 50px;
+div.title h1, div.title p{
+    margin-bottom: 20px;
 }
 
 div.max-width{
-    width: 1280px;
     min-width: 1280px;
     max-width: 1280px;
-    margin: auto;
+    margin: auto 70px auto;
 }
 
 header#main-menu {
@@ -27,6 +28,7 @@ header#main-menu {
     background-color: white;
     width: 2280px;
     margin: auto;
+    padding: 0;
 }
 
 header#main-menu li {
@@ -48,6 +50,7 @@ header#main-menu a:hover {
     text-decoration: none;
     color: darkgray;
 }
+
 img#main-menu-logo {
     width:120px;
     height: 60px;
@@ -77,16 +80,41 @@ table#perkTable td {
     color: #413F40;
 }
 
-table#gallery  img {
-    width: 400px;
-    height:200px;
+table#gallery img.fullsize {
+    width: 1200px;
+    height: 505px;
 }
-form {
+table#gallery img.big-collage-first{
+    width: 800px;
+    height:505px;
+}
+
+table#gallery img.big-collage-second{
+    display: block;
+    margin: 1px;
+}
+
+table#gallery img.big-collage-third{
+    display: block;
+    margin:1px;
+}
+
+table#gallery td, table#gallery tr{
+    display: inline-block;
+    margin: 1px;
+}
+
+table#gallery img{
+    width: 397px;
+    height:250px;
+}
+
+form#contact{
     margin-top: 100px;
     margin-left: 100px;
 }
 
-form input, form textarea, form button{
+form#contact input, form#contact textarea, form#contact button{
     float: left;
     width: 600px;
     height:50px;
@@ -95,7 +123,7 @@ form input, form textarea, form button{
     opacity: 0.8;
 }
 
-form button{
+form#contact button{
     background-color: lightgray;
     width: 200px;
     height: 50px;
@@ -115,10 +143,11 @@ form button{
     right: 618px;
 }
 
-form button:hover{
+form#contact button:hover{
     opacity: 1;
  }
-form textarea#comment {
+
+form#contact textarea#comment {
     width: 600px;
     height: 170px;
 
@@ -137,12 +166,13 @@ map {
         positions x and y of the map
      */
     position: relative;
-    right: 150px;
-    bottom: 75px;
+    bottom: 80px;
+    right: 160px;
+    display: inline-block;
 }
 
 map iframe {
-    height: 350px;
+    height: 340px;
     width: 300px;
 
 }
